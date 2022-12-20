@@ -1,0 +1,40 @@
+import { Button } from '@ui-monorepo/components';
+
+// More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
+export default {
+  title: 'Example/Button',
+  component: Button,
+  tags: ['docsPage'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+};
+
+// More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
+export const Primary = {
+  args: {
+    primary: true,
+    label: 'Primary',
+  },
+};
+
+export const Secondary = {
+  args: {
+    label: 'Secondary',
+    backgroundColor: 'teal',
+  },
+};
+
+export const Large = {
+  args: {
+    size: 'large',
+    label: 'Large',
+  },
+};
+
+export const Small = {
+  args: {
+    size: 'small',
+    label: 'Small',
+  },
+};
