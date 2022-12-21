@@ -1,5 +1,7 @@
 ## UI Components Monorepo boilerplate
 
+### Tech Stack
+- React + typescript
 - npm workspace
 - vite storybook app
 - vite components lib
